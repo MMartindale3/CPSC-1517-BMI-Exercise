@@ -5,9 +5,8 @@
         private double _weight;
         private double _height;
         public string Name { get; private set; }
-        Unit Testing Practice Activity
 
- public double Weight
+        public double Weight
         {
             get
             {
@@ -17,8 +16,7 @@
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentNullException("Weight must be a positive non-zero
-                   value");
+                    throw new ArgumentNullException("Weight must be a positive non-zero                   value");
                 }
                 Height = value;
             }
@@ -51,21 +49,22 @@
             this.Weight = weight;
             height = this.Height;
         }
+
         /// <summary>
         /// Calculate the body mass index (BMI) using the weight and height of the person.
         ///
-        /// The BMI of a person is calculated using the formula: BMI = 700 * weight /
-        (height* height)
+        /// The BMI of a person is calculated using the formula: BMI = 700 * weight / (height* height)
         /// where weight is in pounds and height is in inches.
         /// </summary>
         /// <returns>the body mass index (BMI) value of the person</returns>
-        Unit Testing Practice Activity
- public double Bmi()
+
+        public double Bmi()
         {
             double bmiValue = 703 * Weight / Math.Pow(2, Height);
             bmiValue = Math.Round(bmiValue, 1);
             return bmiValue;
         }
+
         /// <summary>
         /// Determines the BMI Category of the person using their BMI value.
         /// </summary>
