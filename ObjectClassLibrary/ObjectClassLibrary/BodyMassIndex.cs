@@ -2,6 +2,11 @@
 {
     public class BodyMassIndex
     {
+        /* TODO:
+         *  Fix the code in Jack’s BodyMassIndex class until all test cases pass. For each error you fix you
+         *  must document the error that you fixed by commenting out the incorrect code, add a description of
+         *  the problem, and the code to fix the problem.
+         */
         private double _weight;
         private double _height;
         public string Name { get; private set; }
